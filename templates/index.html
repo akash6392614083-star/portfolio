@@ -16,7 +16,7 @@
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -25,7 +25,7 @@
   <!-- ===== NAVIGATION ===== -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#home" class="nav__brand">akash<span class="dot">.</span>sh</a>
+      <a href="#home" class="nav__brand">Akash Sharma<span class="dot">.</span></a>
 
       <nav class="nav__links" id="navLinks">
         <a href="#home" class="nav__link">Home</a>
@@ -45,13 +45,11 @@
   <main>
     <!-- ===== HERO ===== -->
     <section class="hero" id="home">
-      <div class="hero__grid"></div>
       <div class="section-inner hero__inner">
         <div class="hero__content reveal">
-          <p class="eyebrow">// hello_world</p>
-          <p class="hero__greeting">Hi, I'm <span class="accent-text">Akash Sharma</span></p>
-          <h1 class="hero__title">Data Science &amp; Machine Learning</h1>
-          <p class="hero__subtitle">I build practical machine learning solutions and intelligent applications using Python, NLP, and data-driven techniques.</p>
+          <p class="hero__greeting">Portfolio &middot; <span class="accent-text">2026</span></p>
+          <h1 class="hero__title">Akash Sharma<br><em>Data Science &amp; Machine Learning</em></h1>
+          <p class="hero__subtitle">I build practical machine learning solutions and intelligent applications using Python, NLP, and data-driven techniques &mdash; from first hypothesis to a working, deployed product.</p>
 
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary">View My Projects</a>
@@ -59,29 +57,43 @@
           </div>
 
           <div class="hero__social">
-            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
           </div>
         </div>
 
-        <div class="hero__panel reveal" aria-hidden="true">
-          <div class="terminal">
-            <div class="terminal__bar">
-              <span class="terminal__dot"></span>
-              <span class="terminal__dot"></span>
-              <span class="terminal__dot"></span>
-              <span class="terminal__title">predict.py</span>
-            </div>
-            <pre class="terminal__body"><code><span class="tk-kw">import</span> akash <span class="tk-kw">as</span> ds
-
-model = ds.Candidate(
-    <span class="tk-attr">focus</span>=<span class="tk-str">"Data Science & ML"</span>,
-    <span class="tk-attr">stack</span>=[<span class="tk-str">"Python"</span>, <span class="tk-str">"NLP"</span>, <span class="tk-str">"Flask"</span>],
-    <span class="tk-attr">status</span>=<span class="tk-str">"open_to_work"</span>
-)
-
-<span class="tk-fn">print</span>(model.predict())
-<span class="tk-comment"># >> ready to contribute</span><span class="cursor">&#9608;</span></code></pre>
+        <div class="hero__figure reveal" aria-hidden="true">
+          <div class="hero__figure-plot">
+            <svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+              <!-- axes -->
+              <line x1="40" y1="20" x2="40" y2="250" stroke="#F4EFE4" stroke-opacity="0.16" stroke-width="1"/>
+              <line x1="40" y1="250" x2="430" y2="250" stroke="#F4EFE4" stroke-opacity="0.16" stroke-width="1"/>
+              <!-- gridline ticks -->
+              <g stroke="#F4EFE4" stroke-opacity="0.07" stroke-width="1">
+                <line x1="40" y1="190" x2="430" y2="190"/>
+                <line x1="40" y1="130" x2="430" y2="130"/>
+                <line x1="40" y1="70" x2="430" y2="70"/>
+              </g>
+              <!-- fitted curve -->
+              <path d="M40 220 C 120 230, 150 90, 220 100 S 330 60, 430 40" fill="none" stroke="#C7A365" stroke-width="2"/>
+              <!-- scatter points -->
+              <g fill="#5C9186">
+                <circle cx="62" cy="205" r="4"/>
+                <circle cx="95" cy="215" r="4"/>
+                <circle cx="130" cy="150" r="4"/>
+                <circle cx="168" cy="128" r="4"/>
+                <circle cx="205" cy="112" r="4"/>
+                <circle cx="248" cy="95" r="4"/>
+                <circle cx="286" cy="80" r="4"/>
+                <circle cx="330" cy="70" r="4"/>
+                <circle cx="372" cy="55" r="4"/>
+                <circle cx="408" cy="46" r="4"/>
+              </g>
+            </svg>
+          </div>
+          <div class="hero__figure-caption">
+            <span class="fig-num">Fig. 01</span>
+            <span class="fig-desc">Predicted vs. observed &mdash; fitted model output</span>
           </div>
         </div>
       </div>
@@ -90,10 +102,18 @@ model = ds.Candidate(
     <!-- ===== ABOUT ===== -->
     <section class="about" id="about">
       <div class="section-inner">
-        <p class="eyebrow reveal">// 01 · about</p>
-        <h2 class="section-title reveal">About Me</h2>
+        <p class="eyebrow reveal">About</p>
+        <h2 class="section-title reveal">A little about my work</h2>
 
         <div class="about__grid">
+          <div class="about__photo reveal">
+            <img class="about__photo-img" src="{{ url_for('static', filename='profile.jpg') }}" alt="Photo of Akash Sharma">
+            <div class="about__photo-caption">
+              <span>Akash Sharma</span>
+              <span>Fig. 00</span>
+            </div>
+          </div>
+
           <div class="about__text reveal">
             <p>I'm a BCA student focused on Data Science and Machine Learning, building a solid foundation in Python, statistics, and applied ML. My work centers on turning raw data into models that make useful predictions &mdash; from classification problems to natural language tasks.</p>
             <p>I'm currently strengthening my skills in NLP, SQL, and Flask by building complete, end-to-end projects rather than isolated notebooks &mdash; from data cleaning and model training to a working, deployable application.</p>
@@ -101,21 +121,21 @@ model = ds.Candidate(
 
           <div class="about__cards reveal">
             <div class="info-card">
-              <span class="info-card__icon"><i class="fa-solid fa-crosshairs"></i></span>
+              <span class="info-card__icon">01</span>
               <div>
                 <p class="info-card__label">Focus</p>
                 <p class="info-card__value">Data Science &amp; Machine Learning</p>
               </div>
             </div>
             <div class="info-card">
-              <span class="info-card__icon"><i class="fa-solid fa-code-branch"></i></span>
+              <span class="info-card__icon">02</span>
               <div>
                 <p class="info-card__label">Currently Building</p>
                 <p class="info-card__value">ML-powered applications</p>
               </div>
             </div>
             <div class="info-card">
-              <span class="info-card__icon"><i class="fa-solid fa-flag"></i></span>
+              <span class="info-card__icon">03</span>
               <div>
                 <p class="info-card__label">Goal</p>
                 <p class="info-card__value">Start a career in Data Science / Machine Learning</p>
@@ -129,8 +149,8 @@ model = ds.Candidate(
     <!-- ===== SKILLS ===== -->
     <section class="skills" id="skills">
       <div class="section-inner">
-        <p class="eyebrow reveal">// 02 · skills</p>
-        <h2 class="section-title reveal">Skills</h2>
+        <p class="eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">Tools &amp; techniques</h2>
 
         <div class="skills__grid">
 
@@ -139,7 +159,6 @@ model = ds.Candidate(
             <div class="tag-list">
               <span class="tag">Python</span>
               <span class="tag">SQL</span>
-              
             </div>
           </div>
 
@@ -186,7 +205,6 @@ model = ds.Candidate(
               <span class="tag">Flask</span>
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
-              
             </div>
           </div>
 
@@ -207,29 +225,23 @@ model = ds.Candidate(
     <!-- ===== PROJECTS ===== -->
     <section class="projects" id="projects">
       <div class="section-inner">
-        <p class="eyebrow reveal">// 03 · projects</p>
-        <h2 class="section-title reveal">Projects</h2>
+        <p class="eyebrow reveal">Projects</p>
+        <h2 class="section-title reveal">Selected work</h2>
         <p class="section-lead reveal">A selection of practical ML and NLP applications, built end-to-end from data to a working interface.</p>
 
         <div class="projects__grid">
 
           <!-- Project 1 -->
           <article class="project-card reveal">
-            <div class="project-card__visual" aria-hidden="true">
+            <div class="project-card__visual" data-fig="Fig. 02" aria-hidden="true">
               <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <defs>
-                  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#5EA8FF" stop-opacity="0.35"/>
-                    <stop offset="100%" stop-color="#0B0F14" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <rect width="400" height="220" fill="url(#g1)"/>
-                <g fill="none" stroke="#5EA8FF" stroke-width="1.4" opacity="0.6">
-                  <circle cx="90" cy="70" r="4" fill="#5EA8FF"/>
-                  <circle cx="200" cy="40" r="4" fill="#5EA8FF"/>
-                  <circle cx="310" cy="90" r="4" fill="#5EA8FF"/>
-                  <circle cx="150" cy="150" r="4" fill="#5EA8FF"/>
-                  <circle cx="260" cy="170" r="4" fill="#5EA8FF"/>
+                <rect width="400" height="220" fill="#1C1812"/>
+                <g fill="none" stroke="#5C9186" stroke-width="1.2" opacity="0.75">
+                  <circle cx="90" cy="70" r="4" fill="#C7A365" stroke="none"/>
+                  <circle cx="200" cy="40" r="4" fill="#C7A365" stroke="none"/>
+                  <circle cx="310" cy="90" r="4" fill="#C7A365" stroke="none"/>
+                  <circle cx="150" cy="150" r="4" fill="#C7A365" stroke="none"/>
+                  <circle cx="260" cy="170" r="4" fill="#C7A365" stroke="none"/>
                   <line x1="90" y1="70" x2="200" y2="40"/>
                   <line x1="200" y1="40" x2="310" y2="90"/>
                   <line x1="90" y1="70" x2="150" y2="150"/>
@@ -258,22 +270,16 @@ model = ds.Candidate(
 
           <!-- Project 2 -->
           <article class="project-card reveal">
-            <div class="project-card__visual" aria-hidden="true">
+            <div class="project-card__visual" data-fig="Fig. 03" aria-hidden="true">
               <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <defs>
-                  <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#FFB454" stop-opacity="0.3"/>
-                    <stop offset="100%" stop-color="#0B0F14" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <rect width="400" height="220" fill="url(#g2)"/>
-                <g fill="#FFB454" opacity="0.85">
-                  <rect x="60" y="140" width="24" height="50" rx="3"/>
-                  <rect x="110" y="100" width="24" height="90" rx="3"/>
-                  <rect x="160" y="60" width="24" height="130" rx="3"/>
-                  <rect x="210" y="120" width="24" height="70" rx="3"/>
-                  <rect x="260" y="85" width="24" height="105" rx="3"/>
-                  <rect x="310" y="40" width="24" height="150" rx="3"/>
+                <rect width="400" height="220" fill="#1C1812"/>
+                <g fill="#C7A365" opacity="0.9">
+                  <rect x="60" y="140" width="24" height="50" rx="2"/>
+                  <rect x="110" y="100" width="24" height="90" rx="2"/>
+                  <rect x="160" y="60" width="24" height="130" rx="2"/>
+                  <rect x="210" y="120" width="24" height="70" rx="2"/>
+                  <rect x="260" y="85" width="24" height="105" rx="2"/>
+                  <rect x="310" y="40" width="24" height="150" rx="2"/>
                 </g>
               </svg>
             </div>
@@ -298,26 +304,20 @@ model = ds.Candidate(
 
           <!-- Project 3 -->
           <article class="project-card reveal">
-            <div class="project-card__visual" aria-hidden="true">
+            <div class="project-card__visual" data-fig="Fig. 04" aria-hidden="true">
               <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <defs>
-                  <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#5EA8FF" stop-opacity="0.3"/>
-                    <stop offset="100%" stop-color="#0B0F14" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <rect width="400" height="220" fill="url(#g3)"/>
-                <g fill="none" stroke="#5EA8FF" stroke-width="6" stroke-linecap="round" opacity="0.85">
-                  <path d="M50 170 C 100 60, 300 60, 350 170" stroke-dasharray="1 22"/>
+                <rect width="400" height="220" fill="#1C1812"/>
+                <g fill="none" stroke="#5C9186" stroke-width="5" stroke-linecap="round" opacity="0.85">
+                  <path d="M50 170 C 100 60, 300 60, 350 170" stroke-dasharray="1 20"/>
                 </g>
-                <circle cx="200" cy="110" r="34" fill="none" stroke="#FFB454" stroke-width="3" opacity="0.9"/>
-                <text x="200" y="117" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" fill="#FFB454">97%</text>
+                <circle cx="200" cy="110" r="34" fill="none" stroke="#C7A365" stroke-width="2.5" opacity="0.9"/>
+                <text x="200" y="117" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#C7A365">97%</text>
               </svg>
             </div>
             <div class="project-card__body">
               <h3 class="project-card__title">SMS Spam Detection</h3>
               <p class="project-card__desc">An NLP-based machine learning system that classifies SMS messages as spam or legitimate. Uses TF-IDF feature extraction combined with a trained classifier for text classification.</p>
-              <p class="project-card__metric">Test Accuracy: <span>97%</span></p>
+              <p class="project-card__metric">Test Accuracy<span>97%</span></p>
               <div class="tag-list tag-list--muted">
                 <span class="tag">Python</span>
                 <span class="tag">NLP</span>
@@ -334,17 +334,11 @@ model = ds.Candidate(
 
           <!-- Project 4 -->
           <article class="project-card reveal">
-            <div class="project-card__visual" aria-hidden="true">
+            <div class="project-card__visual" data-fig="Fig. 05" aria-hidden="true">
               <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <defs>
-                  <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#FFB454" stop-opacity="0.3"/>
-                    <stop offset="100%" stop-color="#0B0F14" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <rect width="400" height="220" fill="url(#g4)"/>
-                <polyline points="40,180 90,140 140,155 190,90 240,110 290,55 350,70" fill="none" stroke="#5EA8FF" stroke-width="2.5" opacity="0.9"/>
-                <g fill="#FFB454">
+                <rect width="400" height="220" fill="#1C1812"/>
+                <polyline points="40,180 90,140 140,155 190,90 240,110 290,55 350,70" fill="none" stroke="#5C9186" stroke-width="2.5" opacity="0.9"/>
+                <g fill="#C7A365">
                   <circle cx="40" cy="180" r="3.5"/>
                   <circle cx="90" cy="140" r="3.5"/>
                   <circle cx="140" cy="155" r="3.5"/>
@@ -358,7 +352,7 @@ model = ds.Candidate(
             <div class="project-card__body">
               <h3 class="project-card__title">Car Price Prediction</h3>
               <p class="project-card__desc">A regression-based machine learning project that predicts house prices using data preprocessing, exploratory data analysis, and Linear Regression.</p>
-              <p class="project-card__metric">R&sup2; Score: <span>0.9376</span></p>
+              <p class="project-card__metric">R&sup2; Score<span>0.9376</span></p>
               <div class="tag-list tag-list--muted">
                 <span class="tag">Python</span>
                 <span class="tag">Pandas</span>
@@ -384,7 +378,7 @@ model = ds.Candidate(
       <div class="section-inner">
         <div class="resume__card reveal">
           <div>
-            <p class="eyebrow">// 04 · resume</p>
+            <p class="eyebrow">Resume</p>
             <h2 class="section-title section-title--sm">Want to know more about my experience?</h2>
             <p class="section-lead">Download my resume to explore my education, technical skills, and projects.</p>
           </div>
@@ -398,18 +392,18 @@ model = ds.Candidate(
     <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
       <div class="section-inner">
-        <p class="eyebrow reveal">// 05 · contact</p>
-        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Let's connect</h2>
 
         <div class="contact__grid">
           <div class="contact__info reveal">
             <a href="mailto:akash6392614083@gmail.com" class="contact__item">
               <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
-              <span>G-mail</span>
+              <span>akash6392614083@gmail.com</span>
             </a>
             <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="contact__item">
               <span class="contact__icon"><i class="fa-brands fa-linkedin"></i></span>
-              <span>linkedin-profile</span>
+              <span>LinkedIn Profile</span>
             </a>
             <a href="https://github.com/akash6392614083-star" target="_blank" rel="noopener" class="contact__item">
               <span class="contact__icon"><i class="fa-brands fa-github"></i></span>

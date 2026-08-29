@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeMenu = () => {
     navToggle.classList.remove("is-active");
     navLinks.classList.remove("is-open");
+
     navToggle.setAttribute("aria-expanded", "false");
   };
 
