@@ -1,370 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akash Sharma | Data Science &amp; Machine Learning</title>
-  <meta name="description" content="Portfolio of Akash Sharma, a Data Science and Machine Learning enthusiast building practical ML and NLP applications with Python.">
-  <meta name="author" content="Akash Sharma">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Sharma | Machine Learning &amp; Data Science</title>
+  <meta name="description" content="Portfolio of Akash Sharma – Machine Learning and Data Science enthusiast building practical ML and NLP applications with Python." />
+  <meta name="author" content="Akash Sharma" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Akash Sharma | Data Science & Machine Learning">
-  <meta property="og:description" content="Portfolio of Akash Sharma, a Data Science and Machine Learning enthusiast building practical ML and NLP applications with Python.">
-  <meta property="og:image" content="{{ url_for('static', filename='og-image.png') }}">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Akash Sharma | Machine Learning &amp; Data Science" />
+  <meta property="og:description" content="Portfolio of Akash Sharma – building practical ML and NLP applications with Python." />
+  <meta property="og:image" content="{{ url_for('static', filename='og-image.png') }}" />
 
-  <link rel="icon" href="data:,">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#home" class="nav__brand">Akash Sharma<span class="dot">.</span></a>
+  <!-- ============================================
+  NAVIGATION
+  ============================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__brand">Akash Sharma</a>
 
-      <nav class="nav__links" id="navLinks">
-        <a href="#home" class="nav__link">Home</a>
-        <a href="#about" class="nav__link">About</a>
-        <a href="#skills" class="nav__link">Skills</a>
-        <a href="#projects" class="nav__link">Projects</a>
-        <a href="#resume" class="nav__link">Resume</a>
-        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      <nav class="navbar__links" id="navLinks">
+        <a href="#home" class="navbar__link">Home</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#projects" class="navbar__link">Projects</a>
+        <a href="#resume" class="navbar__link">Resume</a>
+        <a href="#contact" class="navbar__link navbar__link--cta">Contact</a>
       </nav>
 
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="home">
-      <div class="section-inner hero__inner">
-        <div class="hero__content reveal">
-          <p class="hero__greeting">Portfolio &middot; <span class="accent-text">2026</span></p>
-          <h1 class="hero__title">Akash Sharma<br><em>Data Science &amp; Machine Learning</em></h1>
-          <p class="hero__subtitle">I build practical machine learning solutions and intelligent applications using Python, NLP, and data-driven techniques &mdash; from first hypothesis to a working, deployed product.</p>
 
+    <!-- ============================================
+    HERO
+    ============================================ -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__tagline">MACHINE LEARNING &bull; DATA SCIENCE</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="hero__title-highlight">Akash Sharma</span><br />
+            <span class="hero__title-role">Machine Learning &amp; Data Science Enthusiast</span>
+          </h1>
+          <p class="hero__subtitle">
+            Building practical machine learning solutions with Python, data, and intelligent applications.
+          </p>
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary">View My Projects</a>
-            <a href="#contact" class="btn btn--ghost">Contact Me</a>
-          </div>
-
-          <div class="hero__social">
-            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="{{ url_for('static', filename='Akash_Sharma_ML_Intern_Styled_Resume.pdf') }}" class="btn btn--ghost" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="https://github.com/akash6392614083-star" target="_blank" rel="noopener" class="btn btn--icon" aria-label="GitHub profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
 
-        <div class="hero__figure reveal" aria-hidden="true">
-          <div class="hero__figure-plot">
-            <svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
-              <!-- axes -->
-              <line x1="40" y1="20" x2="40" y2="250" stroke="#F4EFE4" stroke-opacity="0.16" stroke-width="1"/>
-              <line x1="40" y1="250" x2="430" y2="250" stroke="#F4EFE4" stroke-opacity="0.16" stroke-width="1"/>
-              <!-- gridline ticks -->
-              <g stroke="#F4EFE4" stroke-opacity="0.07" stroke-width="1">
-                <line x1="40" y1="190" x2="430" y2="190"/>
-                <line x1="40" y1="130" x2="430" y2="130"/>
-                <line x1="40" y1="70" x2="430" y2="70"/>
-              </g>
-              <!-- fitted curve -->
-              <path d="M40 220 C 120 230, 150 90, 220 100 S 330 60, 430 40" fill="none" stroke="#C7A365" stroke-width="2"/>
-              <!-- scatter points -->
-              <g fill="#5C9186">
-                <circle cx="62" cy="205" r="4"/>
-                <circle cx="95" cy="215" r="4"/>
-                <circle cx="130" cy="150" r="4"/>
-                <circle cx="168" cy="128" r="4"/>
-                <circle cx="205" cy="112" r="4"/>
-                <circle cx="248" cy="95" r="4"/>
-                <circle cx="286" cy="80" r="4"/>
-                <circle cx="330" cy="70" r="4"/>
-                <circle cx="372" cy="55" r="4"/>
-                <circle cx="408" cy="46" r="4"/>
-              </g>
-            </svg>
+        <div class="hero__visual reveal">
+          <div class="ml-pipeline">
+            <div class="ml-pipeline__node ml-pipeline__node--data">
+              <span class="ml-pipeline__icon"><i class="fa-solid fa-database"></i></span>
+              <span class="ml-pipeline__label">Data</span>
+            </div>
+            <div class="ml-pipeline__arrow">↓</div>
+            <div class="ml-pipeline__node ml-pipeline__node--preprocess">
+              <span class="ml-pipeline__icon"><i class="fa-solid fa-sliders-h"></i></span>
+              <span class="ml-pipeline__label">Preprocessing</span>
+            </div>
+            <div class="ml-pipeline__arrow">↓</div>
+            <div class="ml-pipeline__node ml-pipeline__node--features">
+              <span class="ml-pipeline__icon"><i class="fa-solid fa-cubes"></i></span>
+              <span class="ml-pipeline__label">Features</span>
+            </div>
+            <div class="ml-pipeline__arrow">↓</div>
+            <div class="ml-pipeline__node ml-pipeline__node--model">
+              <span class="ml-pipeline__icon"><i class="fa-solid fa-brain"></i></span>
+              <span class="ml-pipeline__label">ML Model</span>
+            </div>
+            <div class="ml-pipeline__arrow">↓</div>
+            <div class="ml-pipeline__node ml-pipeline__node--prediction">
+              <span class="ml-pipeline__icon"><i class="fa-solid fa-chart-simple"></i></span>
+              <span class="ml-pipeline__label">Prediction</span>
+            </div>
           </div>
-          <div class="hero__figure-caption">
-            <span class="fig-num">Fig. 01</span>
-            <span class="fig-desc">Predicted vs. observed &mdash; fitted model output</span>
-          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <span class="stat__number">7.4</span>
+          <span class="stat__label">CGPA</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">5+</span>
+          <span class="stat__label">ML Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">97%</span>
+          <span class="stat__label">Spam Classifier</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">2026</span>
+          <span class="stat__label">Graduation</span>
         </div>
       </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ============================================
+    ABOUT
+    ============================================ -->
     <section class="about" id="about">
-      <div class="section-inner">
-        <p class="eyebrow reveal">About</p>
-        <h2 class="section-title reveal">A little about my work</h2>
-
-        <div class="about__grid">
-          <div class="about__photo reveal">
-            <img class="about__photo-img" src="{{ url_for('static', filename='profile.jpg') }}" alt="Photo of Akash Sharma">
-            <div class="about__photo-caption">
-              <span>Akash Sharma</span>
-              <span>Fig. 00</span>
-            </div>
-          </div>
-
-          <div class="about__text reveal">
-            <p>I'm a BCA student focused on Data Science and Machine Learning, building a solid foundation in Python, statistics, and applied ML. My work centers on turning raw data into models that make useful predictions &mdash; from classification problems to natural language tasks.</p>
-            <p>I'm currently strengthening my skills in NLP, SQL, and Flask by building complete, end-to-end projects rather than isolated notebooks &mdash; from data cleaning and model training to a working, deployable application.</p>
-          </div>
-
-          <div class="about__cards reveal">
-            <div class="info-card">
-              <span class="info-card__icon">01</span>
-              <div>
-                <p class="info-card__label">Focus</p>
-                <p class="info-card__value">Data Science &amp; Machine Learning</p>
-              </div>
-            </div>
-            <div class="info-card">
-              <span class="info-card__icon">02</span>
-              <div>
-                <p class="info-card__label">Currently Building</p>
-                <p class="info-card__value">ML-powered applications</p>
-              </div>
-            </div>
-            <div class="info-card">
-              <span class="info-card__icon">03</span>
-              <div>
-                <p class="info-card__label">Goal</p>
-                <p class="info-card__value">Start a career in Data Science / Machine Learning</p>
-              </div>
-            </div>
-          </div>
+      <div class="about__inner">
+        <div class="about__image reveal">
+          <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Akash Sharma - Machine Learning & Data Science" class="about__photo" />
+        </div>
+        <div class="about__content reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="section-title">Building intelligent systems with data.</h2>
+          <p class="about__text">
+            I'm a BCA student focused on Data Science and Machine Learning, building a strong foundation in Python, statistics, and applied ML. My work centers on turning raw data into models that make useful predictions — from classification problems to natural language tasks.
+          </p>
+          <p class="about__text">
+            I'm currently strengthening my skills in NLP, SQL, and Flask by building complete, end-to-end projects rather than isolated notebooks — from data cleaning and model training to a working, deployable application.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    <!-- ============================================
+    SKILLS
+    ============================================ -->
     <section class="skills" id="skills">
-      <div class="section-inner">
-        <p class="eyebrow reveal">Skills</p>
-        <h2 class="section-title reveal">Tools &amp; techniques</h2>
+      <div class="skills__inner">
+        <p class="eyebrow reveal">Expertise</p>
+        <h2 class="section-title reveal">Tools &amp; Technologies</h2>
 
         <div class="skills__grid">
-
-          <div class="skill-card reveal">
-            <h3 class="skill-card__title"><i class="fa-solid fa-terminal"></i> Programming</h3>
-            <div class="tag-list">
-              <span class="tag">Python</span>
-              <span class="tag">SQL</span>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title"><i class="fa-solid fa-terminal"></i> Programming</h3>
+            <div class="skill-pills">
+              <span class="pill">Python</span>
+              <span class="pill">SQL</span>
             </div>
           </div>
 
-          <div class="skill-card reveal">
-            <h3 class="skill-card__title"><i class="fa-solid fa-chart-line"></i> Data Science</h3>
-            <div class="tag-list">
-              <span class="tag">NumPy</span>
-              <span class="tag">Pandas</span>
-              <span class="tag">Matplotlib</span>
-              <span class="tag">Seaborn</span>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title"><i class="fa-solid fa-chart-line"></i> Data Science</h3>
+            <div class="skill-pills">
+              <span class="pill">NumPy</span>
+              <span class="pill">Pandas</span>
+              <span class="pill">Matplotlib</span>
+              <span class="pill">Seaborn</span>
+              <span class="pill">Data Cleaning</span>
+              <span class="pill">EDA</span>
+              <span class="pill">Feature Engineering</span>
             </div>
           </div>
 
-          <div class="skill-card reveal">
-            <h3 class="skill-card__title"><i class="fa-solid fa-brain"></i> Machine Learning</h3>
-            <div class="tag-list">
-              <span class="tag">Linear Regression</span>
-              <span class="tag">Logistic Regression</span>
-              <span class="tag">Decision Trees</span>
-              <span class="tag">Random Forest</span>
-              <span class="tag">KNN</span>
-              <span class="tag">SVM</span>
-              <span class="tag">PCA</span>
-              <span class="tag">Lasso</span>
-              <span class="tag">Ridge</span>
-              <span class="tag">Gradient Boosting</span>
-              <span class="tag">XGBoost</span>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title"><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+            <div class="skill-pills">
+              <span class="pill">Scikit-learn</span>
+              <span class="pill">Linear Regression</span>
+              <span class="pill">Logistic Regression</span>
+              <span class="pill">Decision Tree</span>
+              <span class="pill">Random Forest</span>
+              <span class="pill">KNN</span>
+              <span class="pill">Naive Bayes</span>
+              <span class="pill">SVM</span>
+              <span class="pill">PCA</span>
+              <span class="pill">Lasso</span>
+              <span class="pill">Ridge</span>
+              <span class="pill">AdaBoost</span>
+              <span class="pill">Gradient Boosting</span>
+              <span class="pill">XGBoost</span>
             </div>
           </div>
 
-          <div class="skill-card reveal">
-            <h3 class="skill-card__title"><i class="fa-solid fa-comments"></i> NLP</h3>
-            <div class="tag-list">
-              <span class="tag">Text Preprocessing</span>
-              <span class="tag">TF-IDF</span>
-              <span class="tag">Text Classification</span>
-              <span class="tag">Intent Classification</span>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title"><i class="fa-solid fa-comments"></i> NLP &amp; Text</h3>
+            <div class="skill-pills">
+              <span class="pill">TF-IDF</span>
+              <span class="pill">Text Classification</span>
+              <span class="pill">Intent Classification</span>
+              <span class="pill">Text Preprocessing</span>
             </div>
           </div>
 
-          <div class="skill-card reveal">
-            <h3 class="skill-card__title"><i class="fa-solid fa-globe"></i> Web &amp; Backend</h3>
-            <div class="tag-list">
-              <span class="tag">Flask</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title"><i class="fa-solid fa-globe"></i> Web &amp; Backend</h3>
+            <div class="skill-pills">
+              <span class="pill">Flask</span>
             </div>
           </div>
 
-          <div class="skill-card reveal">
-            <h3 class="skill-card__title"><i class="fa-solid fa-database"></i> Database &amp; Tools</h3>
-            <div class="tag-list">
-              <span class="tag">MySQL</span>
-              <span class="tag">Git</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">VS Code</span>
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title"><i class="fa-solid fa-database"></i> Database &amp; Tools</h3>
+            <div class="skill-pills">
+              <span class="pill">MySQL</span>
+              <span class="pill">Git</span>
+              <span class="pill">GitHub</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">Render</span>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
+    <!-- ============================================
+    PROJECTS
+    ============================================ -->
     <section class="projects" id="projects">
-      <div class="section-inner">
-        <p class="eyebrow reveal">Projects</p>
-        <h2 class="section-title reveal">Selected work</h2>
-        <p class="section-lead reveal">A selection of practical ML and NLP applications, built end-to-end from data to a working interface.</p>
+      <div class="projects__inner">
+        <p class="eyebrow reveal">Portfolio</p>
+        <h2 class="section-title reveal">Machine Learning Projects</h2>
+        <p class="section-lead reveal">End-to-end ML applications — from data to deployment.</p>
 
         <div class="projects__grid">
 
-          <!-- Project 1 -->
+          <!-- Project 1: AI Chatbot -->
           <article class="project-card reveal">
-            <div class="project-card__visual" data-fig="Fig. 02" aria-hidden="true">
-              <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <rect width="400" height="220" fill="#1C1812"/>
-                <g fill="none" stroke="#5C9186" stroke-width="1.2" opacity="0.75">
-                  <circle cx="90" cy="70" r="4" fill="#C7A365" stroke="none"/>
-                  <circle cx="200" cy="40" r="4" fill="#C7A365" stroke="none"/>
-                  <circle cx="310" cy="90" r="4" fill="#C7A365" stroke="none"/>
-                  <circle cx="150" cy="150" r="4" fill="#C7A365" stroke="none"/>
-                  <circle cx="260" cy="170" r="4" fill="#C7A365" stroke="none"/>
-                  <line x1="90" y1="70" x2="200" y2="40"/>
-                  <line x1="200" y1="40" x2="310" y2="90"/>
-                  <line x1="90" y1="70" x2="150" y2="150"/>
-                  <line x1="150" y1="150" x2="260" y2="170"/>
-                  <line x1="200" y1="40" x2="150" y2="150"/>
-                </g>
-              </svg>
+            <div class="project-card__visual project-card__visual--chatbot">
+              <div class="chatbot-preview">
+                <div class="chatbot-preview__header">
+                  <span class="chatbot-preview__dot"></span>
+                  <span class="chatbot-preview__dot"></span>
+                  <span class="chatbot-preview__dot"></span>
+                  <span class="chatbot-preview__name">AI Chatbot</span>
+                </div>
+                <div class="chatbot-preview__body">
+                  <div class="chatbot-preview__msg chatbot-preview__msg--user">Hello!</div>
+                  <div class="chatbot-preview__msg chatbot-preview__msg--bot">Hi there! How can I help you today?</div>
+                  <div class="chatbot-preview__msg chatbot-preview__msg--user">What's the weather?</div>
+                  <div class="chatbot-preview__msg chatbot-preview__msg--bot">Let me check that for you...</div>
+                </div>
+              </div>
             </div>
             <div class="project-card__body">
               <h3 class="project-card__title">AI Chatbot</h3>
-              <p class="project-card__desc">An ML-powered chatbot designed to understand user queries, classify intents, and provide appropriate responses. Integrates features such as weather, currency, calculations, date/time, and conversational replies.</p>
-              <div class="tag-list tag-list--muted">
+              <p class="project-card__desc">A machine-learning-based chatbot that classifies user intent and provides responses for conversations and utility features like weather, currency, and calculations.</p>
+              <div class="tag-list">
                 <span class="tag">Python</span>
-                <span class="tag">NLP</span>
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Flask</span>
-                <span class="tag">APIs</span>
                 <span class="tag">Scikit-learn</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">Flask</span>
+                <span class="tag">API</span>
               </div>
               <div class="project-card__actions">
-                <a href="https://github.com/akash6392614083-star/chat-bot" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://chat-bot-2-kxri.onrender.com/" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/akash6392614083-star/chat-bot" target="_blank" rel="noopener" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://chat-bot-2-kxri.onrender.com/" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2 -->
+          <!-- Project 2: Smart Recruitment System -->
           <article class="project-card reveal">
-            <div class="project-card__visual" data-fig="Fig. 03" aria-hidden="true">
-              <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <rect width="400" height="220" fill="#1C1812"/>
-                <g fill="#C7A365" opacity="0.9">
-                  <rect x="60" y="140" width="24" height="50" rx="2"/>
-                  <rect x="110" y="100" width="24" height="90" rx="2"/>
-                  <rect x="160" y="60" width="24" height="130" rx="2"/>
-                  <rect x="210" y="120" width="24" height="70" rx="2"/>
-                  <rect x="260" y="85" width="24" height="105" rx="2"/>
-                  <rect x="310" y="40" width="24" height="150" rx="2"/>
-                </g>
-              </svg>
+            <div class="project-card__visual project-card__visual--recruitment">
+              <div class="recruitment-preview">
+                <div class="recruitment-preview__card">
+                  <span class="recruitment-preview__badge">Candidate Score</span>
+                  <div class="recruitment-preview__bar"><span style="width:78%"></span></div>
+                  <span class="recruitment-preview__badge">Aptitude</span>
+                  <div class="recruitment-preview__bar"><span style="width:85%"></span></div>
+                  <span class="recruitment-preview__badge">Communication</span>
+                  <div class="recruitment-preview__bar"><span style="width:72%"></span></div>
+                  <span class="recruitment-preview__result">✅ Shortlist</span>
+                </div>
+              </div>
             </div>
             <div class="project-card__body">
               <h3 class="project-card__title">Smart Recruitment System</h3>
-              <p class="project-card__desc">A machine-learning-based recruitment application that uses candidate CGPA, aptitude score, communication score, skills, internships, and projects to assist with candidate shortlisting.</p>
-              <div class="tag-list tag-list--muted">
+              <p class="project-card__desc">A machine-learning application that evaluates candidate information (CGPA, aptitude, communication, skills) and provides recruitment predictions using classification.</p>
+              <div class="tag-list">
                 <span class="tag">Python</span>
                 <span class="tag">Pandas</span>
                 <span class="tag">Scikit-learn</span>
                 <span class="tag">Logistic Regression</span>
                 <span class="tag">Flask</span>
                 <span class="tag">MySQL</span>
-                <span class="tag">HTML/CSS</span>
               </div>
               <div class="project-card__actions">
-                <a href="https://github.com/akash6392614083-star/smart-Recruitment-system" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://smart-recruitment-system-1-dkrz.onrender.com/" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/akash6392614083-star/smart-Recruitment-system" target="_blank" rel="noopener" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://smart-recruitment-system-1-dkrz.onrender.com/" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3 -->
+          <!-- Project 3: SMS Spam Classifier -->
           <article class="project-card reveal">
-            <div class="project-card__visual" data-fig="Fig. 04" aria-hidden="true">
-              <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <rect width="400" height="220" fill="#1C1812"/>
-                <g fill="none" stroke="#5C9186" stroke-width="5" stroke-linecap="round" opacity="0.85">
-                  <path d="M50 170 C 100 60, 300 60, 350 170" stroke-dasharray="1 20"/>
-                </g>
-                <circle cx="200" cy="110" r="34" fill="none" stroke="#C7A365" stroke-width="2.5" opacity="0.9"/>
-                <text x="200" y="117" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#C7A365">97%</text>
-              </svg>
+            <div class="project-card__visual project-card__visual--spam">
+              <div class="spam-preview">
+                <div class="spam-preview__phone">
+                  <span class="spam-preview__status spam-preview__status--safe">📩 Legitimate</span>
+                  <span class="spam-preview__message">Hey, are we still on for coffee tomorrow?</span>
+                  <span class="spam-preview__status spam-preview__status--danger">🚫 Spam</span>
+                  <span class="spam-preview__message">Congratulations! You've won a free iPhone!</span>
+                  <span class="spam-preview__accuracy">97% Accuracy</span>
+                </div>
+              </div>
             </div>
             <div class="project-card__body">
-              <h3 class="project-card__title">SMS Spam Detection</h3>
-              <p class="project-card__desc">An NLP-based machine learning system that classifies SMS messages as spam or legitimate. Uses TF-IDF feature extraction combined with a trained classifier for text classification.</p>
-              <p class="project-card__metric">Test Accuracy<span>97%</span></p>
-              <div class="tag-list tag-list--muted">
+              <h3 class="project-card__title">SMS Spam Classifier</h3>
+              <p class="project-card__desc">A text classification machine-learning application that identifies SMS messages as spam or legitimate using TF-IDF and a trained classifier.</p>
+              <div class="tag-list">
                 <span class="tag">Python</span>
-                <span class="tag">NLP</span>
-                <span class="tag">TF-IDF</span>
-                <span class="tag">Scikit-learn</span>
                 <span class="tag">Pandas</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">Classification</span>
               </div>
               <div class="project-card__actions">
-                <a href="https://github.com/akash6392614083-star/spam-classifier" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://spam-classifier-2-bvvc.onrender.com/" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/akash6392614083-star/spam-classifier" target="_blank" rel="noopener" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://spam-classifier-2-bvvc.onrender.com/" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
           </article>
 
-          <!-- Project 4 -->
+          <!-- Project 4: Car Price Prediction -->
           <article class="project-card reveal">
-            <div class="project-card__visual" data-fig="Fig. 05" aria-hidden="true">
-              <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
-                <rect width="400" height="220" fill="#1C1812"/>
-                <polyline points="40,180 90,140 140,155 190,90 240,110 290,55 350,70" fill="none" stroke="#5C9186" stroke-width="2.5" opacity="0.9"/>
-                <g fill="#C7A365">
-                  <circle cx="40" cy="180" r="3.5"/>
-                  <circle cx="90" cy="140" r="3.5"/>
-                  <circle cx="140" cy="155" r="3.5"/>
-                  <circle cx="190" cy="90" r="3.5"/>
-                  <circle cx="240" cy="110" r="3.5"/>
-                  <circle cx="290" cy="55" r="3.5"/>
-                  <circle cx="350" cy="70" r="3.5"/>
-                </g>
-              </svg>
+            <div class="project-card__visual project-card__visual--car">
+              <div class="car-preview">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="20" y="50" width="160" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+                  <rect x="50" y="30" width="100" height="25" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+                  <circle cx="55" cy="85" r="18" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+                  <circle cx="145" cy="85" r="18" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+                  <circle cx="55" cy="85" r="8" fill="#6366F1" opacity="0.6"/>
+                  <circle cx="145" cy="85" r="8" fill="#6366F1" opacity="0.6"/>
+                  <text x="100" y="48" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#94A3B8">Car Price Prediction</text>
+                  <text x="100" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="#22D3EE">R² = 0.9376</text>
+                </svg>
+              </div>
             </div>
             <div class="project-card__body">
               <h3 class="project-card__title">Car Price Prediction</h3>
-              <p class="project-card__desc">A regression-based machine learning project that predicts house prices using data preprocessing, exploratory data analysis, and Linear Regression.</p>
-              <p class="project-card__metric">R&sup2; Score<span>0.9376</span></p>
-              <div class="tag-list tag-list--muted">
+              <p class="project-card__desc">A regression-based machine learning project that predicts car prices using data preprocessing, exploratory data analysis, and Linear Regression.</p>
+              <p class="project-card__metric">R² Score <span>0.9376</span></p>
+              <div class="tag-list">
                 <span class="tag">Python</span>
                 <span class="tag">Pandas</span>
                 <span class="tag">NumPy</span>
-                <span class="tag">Matplotlib</span>
-                <span class="tag">Seaborn</span>
                 <span class="tag">Scikit-learn</span>
-                <span class="tag">Linear Regression</span>
+                <span class="tag">Regression</span>
               </div>
               <div class="project-card__actions">
-                <a href="https://github.com/akash6392614083-star/car-price-prediction" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://car-price-prediction-2-nyrv.onrender.com/" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/akash6392614083-star/car-price-prediction" target="_blank" rel="noopener" class="btn btn--sm btn--ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://car-price-prediction-2-nyrv.onrender.com/" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
           </article>
@@ -373,14 +371,16 @@
       </div>
     </section>
 
-    <!-- ===== RESUME ===== -->
+    <!-- ============================================
+    RESUME CTA
+    ============================================ -->
     <section class="resume" id="resume">
-      <div class="section-inner">
-        <div class="resume__card reveal">
+      <div class="resume__inner reveal">
+        <div class="resume__card">
           <div>
             <p class="eyebrow">Resume</p>
-            <h2 class="section-title section-title--sm">Want to know more about my experience?</h2>
-            <p class="section-lead">Download my resume to explore my education, technical skills, and projects.</p>
+            <h2 class="section-title section-title--sm">Want to know more about my work?</h2>
+            <p class="section-lead">View my resume and explore my technical background, projects, and education.</p>
           </div>
           <a href="{{ url_for('static', filename='Akash_Sharma_ML_Intern_Styled_Resume.pdf') }}" class="btn btn--primary" download>
             <i class="fa-solid fa-download"></i> Download Resume
@@ -389,21 +389,32 @@
       </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
+    <!-- ============================================
+    CONTACT
+    ============================================ -->
     <section class="contact" id="contact">
-      <div class="section-inner">
+      <div class="contact__inner">
         <p class="eyebrow reveal">Contact</p>
-        <h2 class="section-title reveal">Let's connect</h2>
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="section-lead reveal">Interested in discussing an ML project, internship opportunity, or collaboration?</p>
 
         <div class="contact__grid">
           <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="contact__icon"><i class="fa-solid fa-user"></i></span>
+              <span>Akash Sharma</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Lucknow, Uttar Pradesh, India</span>
+            </div>
             <a href="mailto:akash6392614083@gmail.com" class="contact__item">
               <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
               <span>akash6392614083@gmail.com</span>
             </a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="contact__item">
-              <span class="contact__icon"><i class="fa-brands fa-linkedin"></i></span>
-              <span>LinkedIn Profile</span>
+            <a href="tel:9219747670" class="contact__item">
+              <span class="contact__icon"><i class="fa-solid fa-phone"></i></span>
+              <span>9219747670</span>
             </a>
             <a href="https://github.com/akash6392614083-star" target="_blank" rel="noopener" class="contact__item">
               <span class="contact__icon"><i class="fa-brands fa-github"></i></span>
@@ -414,15 +425,15 @@
           <form class="contact__form reveal" id="contactForm">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="What would you like to say?" required></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="What would you like to say?" required></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--full">Send Message</button>
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
@@ -430,16 +441,23 @@
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ============================================
+  FOOTER
+  ============================================ -->
   <footer class="footer">
-    <div class="section-inner footer__inner">
-      <p>&copy; 2026 Akash Sharma. Built with Python, Flask &amp; modern web technologies.</p>
-      <div class="footer__social">
-        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+    <div class="footer__inner">
+      <div>
+        <p class="footer__brand">Akash Sharma</p>
+        <p class="footer__tagline">Machine Learning &amp; Data Science</p>
       </div>
+      <div class="footer__social">
+        <a href="https://github.com/akash6392614083-star" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <!-- No fake LinkedIn link -->
+      </div>
+      <p class="footer__copy">&copy; 2026 Akash Sharma</p>
     </div>
   </footer>
 

@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* ---------- Sticky nav shadow on scroll ---------- */
-  const nav = document.getElementById("nav");
+  /* ---------- Navbar scroll shadow ---------- */
+  const navbar = document.getElementById("navbar");
   const onScroll = () => {
-    nav.classList.toggle("is-scrolled", window.scrollY > 10);
+    navbar.classList.toggle("is-scrolled", window.scrollY > 10);
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeMenu = () => {
     navToggle.classList.remove("is-active");
     navLinks.classList.remove("is-open");
-
     navToggle.setAttribute("aria-expanded", "false");
   };
 
@@ -24,11 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  navLinks.querySelectorAll(".nav__link").forEach((link) => {
+  navLinks.querySelectorAll(".navbar__link").forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
 
-  /* ---------- Scroll-reveal animation ---------- */
+  /* ---------- Scroll reveal ---------- */
   const revealEls = document.querySelectorAll(".reveal");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -44,12 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
     );
     revealEls.forEach((el) => observer.observe(el));
   }
 
-  /* ---------- Contact form (frontend-only placeholder) ---------- */
+  /* ---------- Contact form (frontend-only) ---------- */
   const form = document.getElementById("contactForm");
   const status = document.getElementById("formStatus");
 
@@ -63,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      status.textContent = `Thanks${name ? ", " + name : ""}! This form isn't connected to a backend yet, so please reach out directly via email or LinkedIn for now.`;
+      status.textContent =
+        `Thanks${name ? ", " + name : ""}! This form isn't connected to a backend yet, so please reach out directly via email or phone for now.`;
       form.reset();
     });
   }
